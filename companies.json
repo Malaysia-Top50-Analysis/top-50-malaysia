@@ -1,0 +1,302 @@
+[
+{
+"tk": "MAY MK",
+"name": "Malayan Banking Bhd",
+"code": "1155.KL",
+"shares": 12081.105315
+},
+{
+"tk": "PBK MK",
+"name": "Public Bank Bhd",
+"code": "1295.KL",
+"shares": 19410.691735
+},
+{
+"tk": "CIMB MK",
+"name": "CIMB Group Holdings Bhd",
+"code": "1023.KL",
+"shares": 10797.748523
+},
+{
+"tk": "TNB MK",
+"name": "Tenaga Nasional Bhd",
+"code": "5347.KL",
+"shares": 5829.142171
+},
+{
+"tk": "IHH MK",
+"name": "IHH Healthcare Bhd",
+"code": "5225.KL",
+"shares": 8836.153463
+},
+{
+"tk": "PMAH MK",
+"name": "Press Metal Aluminium Holdings",
+"code": "8869.KL",
+"shares": 8239.617778
+},
+{
+"tk": "YTLP MK",
+"name": "YTL Power International Bhd",
+"code": "6742.KL",
+"shares": 8582.541168
+},
+{
+"tk": "HLBK MK",
+"name": "Hong Leong Bank Bhd",
+"code": "5819.KL",
+"shares": 2086.616584
+},
+{
+"tk": "SDG MK",
+"name": "SD Guthrie Bhd",
+"code": "5285.KL",
+"shares": 6915.714601
+},
+{
+"tk": "MISC MK",
+"name": "MISC Bhd",
+"code": "3816.KL",
+"shares": 4463.745703
+},
+{
+"tk": "PTG MK",
+"name": "Petronas Gas Bhd",
+"code": "6033.KL",
+"shares": 1978.731915
+},
+{
+"tk": "PCHEM MK",
+"name": "Petronas Chemicals Group Bhd",
+"code": "5183.KL",
+"shares": 8000
+},
+{
+"tk": "RHBBANK MK",
+"name": "RHB Bank Bhd",
+"code": "1066.KL",
+"shares": 4361.91375
+},
+{
+"tk": "GAM MK",
+"name": "Gamuda Bhd",
+"code": "5398.KL",
+"shares": 5852.710687
+},
+{
+"tk": "T MK",
+"name": "Telekom Malaysia Bhd",
+"code": "4863.KL",
+"shares": 3837.73848
+},
+{
+"tk": "CDB MK",
+"name": "CelcomDigi Bhd",
+"code": "6947.KL",
+"shares": 11731.507988
+},
+{
+"tk": "SWB MK",
+"name": "Sunway Bhd",
+"code": "5211.KL",
+"shares": 6760.420695
+},
+{
+"tk": "IOI MK",
+"name": "IOI Corp Bhd",
+"code": "1961.KL",
+"shares": 6285.198995
+},
+{
+"tk": "MAXIS MK",
+"name": "Maxis Bhd",
+"code": "6012.KL",
+"shares": 7835.08461
+},
+{
+"tk": "YTL MK",
+"name": "YTL Corp Bhd",
+"code": "4677.KL",
+"shares": 11479.958458
+},
+{
+"tk": "99SMART MK",
+"name": "99 Speed Mart Retail Holdings",
+"code": "5326.KL",
+"shares": 8400
+},
+{
+"tk": "KLK MK",
+"name": "Kuala Lumpur Kepong Bhd",
+"code": "2445.KL",
+"shares": 1113.659396
+},
+{
+"tk": "SUNMED MK",
+"name": "Sunway Healthcare Holdings Bhd",
+"code": "5555.KL",
+"shares": 11500.165558
+},
+{
+"tk": "WPRTS MK",
+"name": "Westports Holdings Bhd",
+"code": "5246.KL",
+"shares": 3422.357817
+},
+{
+"tk": "AMM MK",
+"name": "AMMB Holdings Bhd",
+"code": "1015.KL",
+"shares": 3306.152944
+},
+{
+"tk": "HLFG MK",
+"name": "Hong Leong Financial Group Bhd",
+"code": "1082.KL",
+"shares": 1147.51689
+},
+{
+"tk": "NESZ MK",
+"name": "Nestle Malaysia Bhd",
+"code": "4707.KL",
+"shares": 234.5
+},
+{
+"tk": "UPL MK",
+"name": "United Plantations Bhd",
+"code": "2089.KL",
+"shares": 622.177476
+},
+{
+"tk": "PETD MK",
+"name": "Petronas Dagangan Bhd",
+"code": "5681.KL",
+"shares": 993.454
+},
+{
+"tk": "VITRO MK",
+"name": "ViTrox Corp Bhd",
+"code": "0097.KL",
+"shares": 1893.2383
+},
+{
+"tk": "IOIPG MK",
+"name": "IOI Properties Group Bhd",
+"code": "5249.KL",
+"shares": 5506.145375
+},
+{
+"tk": "SIME MK",
+"name": "Sime Darby Bhd",
+"code": "4197.KL",
+"shares": 6815.597577
+},
+{
+"tk": "KLCCSS MK",
+"name": "KLCCP Stapled Group",
+"code": "5235SS.KL",
+"shares": 1805.333083
+},
+{
+"tk": "AXIATA MK",
+"name": "Axiata Group Bhd",
+"code": "6888.KL",
+"shares": 9188.142482
+},
+{
+"tk": "QLG MK",
+"name": "QL Resources Bhd",
+"code": "7084.KL",
+"shares": 3641.17305
+},
+{
+"tk": "PEP MK",
+"name": "PPB Group Bhd",
+"code": "4065.KL",
+"shares": 1422.598939
+},
+{
+"tk": "MRDIY MK",
+"name": "MR DIY Group M Bhd",
+"code": "5296.KL",
+"shares": 9477.475992
+},
+{
+"tk": "IGBREIT MK",
+"name": "IGB Real Estate Investment Trust",
+"code": "5227.KL",
+"shares": 4325.539147
+},
+{
+"tk": "KPJ MK",
+"name": "KPJ Healthcare Bhd",
+"code": "5878.KL",
+"shares": 4426.302091
+},
+{
+"tk": "TDC MK",
+"name": "TIME dotCom Bhd",
+"code": "5031.KL",
+"shares": 1848.818643
+},
+{
+"tk": "DLG MK",
+"name": "Dialog Group Bhd",
+"code": "7277.KL",
+"shares": 5642.68465
+},
+{
+"tk": "IJM MK",
+"name": "IJM Corp Bhd",
+"code": "3336.KL",
+"shares": 3505.16612
+},
+{
+"tk": "SCGB MK",
+"name": "Sunway Construction Group Bhd",
+"code": "5263.KL",
+"shares": 1324.43271
+},
+{
+"tk": "INRI MK",
+"name": "Inari Amertron Bhd",
+"code": "0166.KL",
+"shares": 3789.014099
+},
+{
+"tk": "LMC MK",
+"name": "Malayan Cement Bhd",
+"code": "3794.KL",
+"shares": 1371.95413
+},
+{
+"tk": "FRCB MK",
+"name": "Frontken Corp Bhd",
+"code": "0128.KL",
+"shares": 1653.742775
+},
+{
+"tk": "GENM MK",
+"name": "Genting Malaysia Bhd",
+"code": "4715.KL",
+"shares": 5667.741733
+},
+{
+"tk": "ECOSHOP MK",
+"name": "ECO-Shop Marketing Bhd",
+"code": "5337.KL",
+"shares": 5757.525647
+},
+{
+"tk": "MPI MK",
+"name": "Malaysian Pacific Industries Bhd",
+"code": "3867.KL",
+"shares": 199.397951
+},
+{
+"tk": "SDPR MK",
+"name": "Sime Darby Property Bhd",
+"code": "5288.KL",
+"shares": 6800.839377
+}
+]
