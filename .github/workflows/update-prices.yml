@@ -1,0 +1,62 @@
+name: Update prices
+on:
+  schedule:
+    - cron: "*/10 0-9 * * 1-5"    # starts (or restarts) the updater, 08:00-17:59 Malaysia time, Mon-Fri (times are UTC)
+  workflow_dispatch:                  # lets you press "Run workflow" by hand
+  push:                               # re-run when the script itself changes
+    branches: [main]
+    paths: ["update_prices.py", ".github/workflows/update-prices.yml"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Update prices about once a minute
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # GitHub's own schedule cannot run more often than every 5 minutes (and is often late), so this job
+          # stays running and refreshes prices.json about every minute until the Bursa day ends (10:05 UTC).
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          save() {
+            git diff --quiet prices.json && return 0
+            cp prices.json /tmp/prices.new
+            git fetch -q origin main || return 1
+            git reset -q --hard origin/main
+            cp /tmp/prices.new prices.json
+            git add prices.json
+            git diff --cached --quiet && return 0
+            if [ "$(git log -1 --format=%an origin/main)" = "price-bot" ]; then
+              # keep one rolling bot commit instead of thousands of history entries
+              git commit -q --amend -m "Update prices [skip ci]"
+              git push -q --force-with-lease=main:"$(git rev-parse origin/main)" origin HEAD:main
+            else
+              git commit -q -m "Update prices [skip ci]"
+              git push -q origin HEAD:main
+            fi
+          }
+          START=$(date +%s)
+          while true; do
+            T0=$(date +%s)
+            python update_prices.py || echo "update failed, will retry"
+            save || echo "push failed, will retry"
+            if [ "$(date -u +%H%M)" -ge 1005 ]; then break; fi
+            if [ $(( $(date +%s) - START )) -ge 20400 ]; then
+              gh workflow run update-prices.yml --ref main || true
+              break
+            fi
+            S=$(( 60 - ($(date +%s) - T0) ))
+            if [ "$S" -gt 0 ]; then sleep "$S"; fi
+          done
